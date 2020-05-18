@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+  <!--================= http://localhost/luvasxshop/front o http://luvasxshop.com/==============================================================================-->
+  <!-- <link rel="icon" type="image/png"      href="http://luvasxshop.com/images/icons/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/fonts/themify/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/fonts/elegant-font/html-css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/vendor/lightbox2/css/lightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/css/util.css">
+  <link rel="stylesheet" type="text/css" href="http://luvasxshop.com/css/main.css"> -->
+
+   
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/jquery/jquery-3.2.1.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/animsition/js/animsition.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/bootstrap/js/popper.js"></script>
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/select2/select2.min.js"></script>
+  <script type="text/javascript">
+ $(".selection-1").select2({
+   minimumResultsForSearch: 20,
+   dropdownParent: $('#dropDownSelect1')
+ });
+  </script>
+ 
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/slick/slick.min.js"></script>
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/js/slick-custom.js"></script>
+ 
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/countdowntime/countdowntime.js"></script>
+  
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/lightbox2/js/lightbox.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost/luvasxshop/front/vendor/sweetalert/sweetalert.min.js"></script>
+  <script type="text/javascript"-->
+ console.log('asdsadasdasdas');
+ 
+ $('.block2-btn-addcart').each(function(){
+   var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+   $(this).on('click', function(){
+     swal(nameProduct, "is added to cart !", "success");
+   });
+ });
+  
+ $('.block2-btn-addwishlist').each(function(){
+   var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+   $(this).on('click', function(){
+     swal(nameProduct, "is added to wishlist !", "success");
+   });
+ });
+  </script>
+  
+  
+  <script src="http://localhost/luvasxshop/front/js/main.js"></script>
+  
+    
+
+
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="beau">
+	<meta name="author" content="beau">
+	<meta name="keyword" content="beau, rodeo plaza, ropa">
+	<link rel="shortcut icon" href="assets/img/LUVA_LOGO_NEGRO.png">
+	<title>BEAU</title>
+</head>
+
+<!-- BODY options, add following classes to body to change options
+
+// Header options
+1. '.header-fixed'					- Fixed Header
+
+// Brand options
+1. '.brand-minimized'       - Minimized brand (Only symbol)
+
+// Sidebar options
+1. '.sidebar-fixed'					- Fixed Sidebar
+2. '.sidebar-hidden'				- Hidden Sidebar
+3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+5. '.sidebar-compact'			  - Compact Sidebar
+
+// Aside options
+1. '.aside-menu-fixed'			- Fixed Aside Menu
+2. '.aside-menu-hidden'			- Hidden Aside Menu
+3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
+
+// Breadcrumb options
+1. '.breadcrumb-fixed'			- Fixed Breadcrumb
+
+// Foo
+1. '.footer-fixed'					- Fixed footer
+
+-->
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden ">
+  <!-- Enable bootstrap 4 theme -->
+  <script>window.__theme = 'bs4';</script>
+
+  <!-- App Loading... -->
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+
+</html>
