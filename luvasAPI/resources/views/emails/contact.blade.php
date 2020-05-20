@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Luvasxshop</title>
+	<title>Document</title>
 </head>
 <body>
-	<p><strong>Name: </strong>{!!$name!!}</p>
+	<p><strong>Código de verificación: </strong>{!!$codigo_verificacion!!}</p>
 	<br>
-	<p><strong>Phone: </strong>{!!$phone!!}</p>
-	<br>
-	<p><strong>Email: </strong>{!!$email!!}</p>
-	<br>
-	<p><strong>Message: </strong>{!!$msg!!}</p>
+	<p>Saludos cordiales, el equipo de Service24.</p>
 </body>
 </html>

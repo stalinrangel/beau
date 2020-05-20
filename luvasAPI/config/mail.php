@@ -29,7 +29,9 @@ return [
     */
 
     //'host' => env('MAIL_HOST', 'smtp.gmail.com'),
-    'host' => env('MAIL_HOST', 'a2plcpnl0314.prod.iad2.secureserver.net'),
+    //'host' => env('MAIL_HOST', 'mail.mouvers.mx'),
+    //'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'alinstante.app'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +58,12 @@ return [
     */
 
     //'from' => ['address' => 'rattios.tech@gmail.com', 'name' => 'Rattios'],
-    'from' => ['address' => 'suport@luvasxshop.com', 'name' => 'Luvasxshop'],
+    //'from' => ['address' => 'info@mouvers.mx', 'name' => 'mouvers'],
+    /*'from' => [
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
+    ],*/
+    'from' => ['address' => 'info@alinstante.app', 'name' => 'alinstante'],
 
     /*
     |--------------------------------------------------------------------------
