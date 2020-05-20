@@ -58,9 +58,9 @@ class AtributoController extends Controller
         // Comprobamos si el color que nos están pasando existe o no.
         $color = \App\Color::find($request->input('color_id'));
 
-        if(count($color)==0){
-            return response()->json(['error'=>'No existe el color con id '.$request->input('color_id')], 404);          
-        }
+       // if(count($color)==0){
+        //    return response()->json(['error'=>'No existe el color con id '.$request->input('color_id')], 404);          
+        //}
 
         // Comprobamos si el producto que nos están pasando existe o no.
         $producto = \App\Producto::find($request->input('producto_id'));
