@@ -19,7 +19,7 @@ class EmailController extends Controller
     {
 
         /*Cuenta de destino del email*/
-        $correo = 'ramirez.fred@hotmail.com';
+        $correo = 'e.stalinrangel@gmail.com';
 
         $data = array( 'name' => $request->input('name'),
             'phone' => $request->input('phone'),
@@ -28,7 +28,7 @@ class EmailController extends Controller
 
         //Enviamos el correo con el codigo aleatorio
         Mail::send('emails.contact', $data, function($msj) use ($correo){
-            $msj->subject('Contact Luvasxshop');
+            $msj->subject('Contacto Beau');
             $msj->to($correo);
         });
 

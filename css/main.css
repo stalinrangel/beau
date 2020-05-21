@@ -1323,7 +1323,7 @@ li.sale-noti > a {
 }
 
 @media (max-width: 992px){
-  .wrap_header_mobile {
+  /*.wrap_header_mobile {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -1336,7 +1336,7 @@ li.sale-noti > a {
   .container-menu-header-v2,
   .container-menu-header 
   {display: none;}
-
+*/
   .top-bar {display: none;}
   header {height: auto !important;}
 

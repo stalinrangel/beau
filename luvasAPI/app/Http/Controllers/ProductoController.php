@@ -58,9 +58,9 @@ class ProductoController extends Controller
         // Comprobamos si la categoria que nos están pasando existe o no.
         $categoria = \App\Categoria::find($request->input('categoria_id'));
 
-        //if(count($categoria)==0){
-         //   return response()->json(['error'=>'No existe la categoría con id '.$request->input('categoria_id')], 404);          
-        //} 
+        if(count($categoria)==0){
+            return response()->json(['error'=>'No existe la categoría con id '.$request->input('categoria_id')], 404);          
+        } 
 
         if($nuevoProducto=\App\Producto::create([
             'nombre' => $request->input('nombre'),

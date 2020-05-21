@@ -58,9 +58,9 @@ class ColorController extends Controller
         // Comprobamos si el producto que nos están pasando existe o no.
         $producto = \App\Producto::find($request->input('producto_id'));
 
-       // if(count($producto)==0){
-        //    return response()->json(['error'=>'No existe el producto con id '.$request->input('producto_id')], 404);          
-        //} 
+        if(count($producto)==0){
+            return response()->json(['error'=>'No existe el producto con id '.$request->input('producto_id')], 404);          
+        } 
 
         if($nuevoColor=\App\Color::create([
             'nombre_color' => $request->input('nombre_color'),
