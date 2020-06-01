@@ -1337,6 +1337,13 @@ li.sale-noti > a {
   .container-menu-header 
   {display: none;}
 */
+ .main_menu{
+  display: flex;
+  margin-top: 65px;
+  background-color: #fff;
+  width: 100%;
+ }
+ 
   .top-bar {display: none;}
   header {height: auto !important;}
 
